@@ -1,0 +1,109 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: radial-gradient(circle at 67.12% 67.12%, #ff00ff 0, #dd00ff 16.67%, #8e10ff 33.33%, #1012f8 50%, #0012cb 66.67%, #0011a1 83.33%, #00007c 100%);
+}
+header,
+form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+}
+.name {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    font-size: 50px;
+    font-family: system-ui;
+}
+.enter-value {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 2px solid white;
+    max-width: 450px;
+    background-color: white;
+    padding: 23px;
+    border-radius: 30px;
+
+}
+#newtask {
+    margin: 10px;
+}
+#button-add {
+    background-color: #8e10ff;
+    padding: 6px;
+    border-radius: 5px;
+    border: 2px solid #0012cb;
+    box-shadow: 5px 2px 5px #0011a1;
+    color: white;
+}
+#button-add:focus{
+    border: 3px solid #0011a1;
+}
+input {
+    font-family: 'Poppins', sans-serif;
+    padding: 4px;
+    font-weight: 400;
+    border: 2px solid #d1d2d1;
+    border-radius: 5px;
+}
+textarea:focus, input:focus{
+    outline: none;
+    border: 2px solid #8e10ff;
+}
+#list-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#todo-list {
+    min-width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.task {
+    margin: 0.5rem;
+    background-color: #fff;
+    color: #000;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    min-width: 200px;
+    height: 50px;
+    align-items: center;
+    padding: 20px;
+}
+.todo-item {
+    text-decoration: none;
+    list-style-type: none;
+    flex: 1;
+}
+.delete {
+    background-color: #8e10ff;
+    padding: 2px;
+    border-radius: 5px;
+    height: 25px;
+    width: 25px;
+    box-shadow: 2px 2px;
+    cursor: pointer;
+}
+img {
+    pointer-events: none;
+}
